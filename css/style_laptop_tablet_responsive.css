@@ -1,0 +1,92 @@
+/* ======================== */
+/* ===== LAPTOP/TABLET ==== */
+/* ======================== */
+
+@media (max-width: 1080px) {
+  #HeroSection .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero_title {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero_image {
+    margin-bottom: 20px;
+  }
+
+  .scroll_down {
+    position: absolute;
+    top: 315px;
+    right: 8px;
+  }
+
+  .button_set {
+    position: static;
+  }
+
+  /* ABOUT */
+  .about_main_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about_title {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .about_main {
+    grid-row: 2;
+  }
+  .about_background {
+    grid-row: 3;
+  }
+
+  .about_socials {
+    position: static;
+  }
+
+  /* PROJECTS */
+
+  .project_title {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project_title div {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .project_title .tech_used {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .project_title .tech_used .tech_item {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .project_images {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+
+  .back_to_top {
+    position: absolute;
+    top: 315px;
+    right: 8px;
+  }
+}

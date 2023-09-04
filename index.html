@@ -2,47 +2,325 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Open+Sans&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project:Ronin</title>
+  <title>Project Ronin</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_laptop_tablet_responsive.css">
+  <link rel="stylesheet" href="./css/style_mobile_responsive.css">
+  <link rel="shortcut icon" href="./assets/brand/favicon_project_ronin/favicon.ico" type="image/x-icon">
+
 </head>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="./images/logo.png" alt="" width="400px">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQs</a></li>
+<body data-bs-spy="scroll" data-bs-target="#NavbarSection" data-bs-smooth-scroll="true">
+  <!-- (<<) HEADER -->
+  <nav id="NavbarSection">
+    <div class="container">
+      <a href="#" class="navbar_logo">
+        <img src="assets/brand/project_ronin_logo_pr-whole-blue.png" alt="" srcset="">
+      </a>
+      <ul class="navbar_list">
+        <li class="navbar_list_item">
+          <a href="#HeroSection" class="navbar_links active">Intro</a>
+        </li>
+        <li class="navbar_list_item">
+          <a href="#AboutSection" class="navbar_links">About</a>
+        </li>
+        <li class="navbar_list_item">
+          <a href="#ProjectsSection" class="navbar_links">Projects</a>
+        </li>
+        <li class="navbar_list_item">
+          <a href="#ContactSection" class="navbar_links">Contact</a>
+        </li>
       </ul>
-      
-      <a href="#" class="btn">Sign-Up</a>
-    </nav>
-  </header>
-  <main>
-    <div class="main-content">
-      <h1>Web</h1>
-      <h1>Design</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Vestibulum rutrum metus at enim congue scelerisque.
-        Sed suscipit metu
-        non iaculis semper consectetur adipiscing elit.</p>
+      <div class="navbar_menu" id="mobile_menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  <!-- HEADER (>>)  -->
 
-      <a href="#" class="btn">Learn More...</a>
+  <!-- (<<) HERO -->
+  <header id="HeroSection">
+    <div class="container">
+      <div class="hero_title">
+        <h1 class="hero_title_quote">
+          "First rule of coding - if it works don't touch it."
+        </h1>
+        <p class="hero_title_desc">
+          a programmer/developer based in PH
+        </p>
+        <div class="button_set">
+          <a href="./assets/resume/SanJuanRonVincent_Resume.pdf" target="_blank" class="button">
+            <i class="fa-regular fa-file-lines"></i>Get My Resume</a>
+          <a href="mailto:ronvincent.sanjuan.rvsj@gmail.com" class="button"><i
+              class="fa-regular fa-paper-plane"></i>Reach Out</a>
+        </div>
+      </div>
+      <div class="hero_image">
+        <img src="assets/img/ronin.jpg" alt="">
+      </div>
+      <div class="scroll_down">
+        <a href="#AboutSection" class="button">
+          <i class="fa-solid fa-angles-down"></i>
+        </a>
+      </div>
     </div>
-    <div class="main-img">
-      <img src="./images/bg.jpg" alt="images" class="bg-img">
+  </header>
+
+  <!-- (<<) ABOUT -->
+  <section id="AboutSection">
+    <div class="container">
+      <div class="about_main_container">
+        <div class="about_title">
+          <h3 class="about_title_heading">About Me.</h3>
+          <p class="about_title_body">
+            My everyday work is presented here. Who I am, what I do and my social networks.
+          </p>
+          <a href="#ContactSection" class="button">Connect With Me</a>
+        </div>
+        <div class="about_background">
+          <img src="./assets/img/2.JPG" alt="" srcset="">
+        </div>
+        <div class="about_main">
+          <p class="about_main_location"><i class="fa-solid fa-location-dot"></i>Bataan, Philippines</p>
+          <h3>Ron Vincent P. San Juan</h3>
+          <h5>Programmer / Developer</h5>
+          <p>
+            Hello! I'm Ron Vincent P. San Juan. I've always had a passion for learning programming since college but
+            ever
+            since the pandemic hit, I lost the
+            passion to code. Now, I spent a year learning different areas of digital design, front-end development, app
+            UI/UIX, and definitely interested in learning more.
+          </p>
+          <p>
+            Everyday, I try to learn and improve my craft by building and learning about front-end development
+            step-by-step.
+            Building projects continously is what I focus more today. I am dedicated in learning new technologies and
+            committed to enhancing my skills to improve in my field.
+          </p>
+
+          <p>
+            A good music, video game, tv show or anime, is something that I do when I'm not coding. If we share the same
+            interests, hit me up!
+          </p>
+
+          <div class="about_socials">
+            <a href="https://www.facebook.com/rvincent.sanjuan" target="_blank" class="socials_links">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/ronxvincent" target="_blank" class="socials_links">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/ronin.sj/" target="_blank" class="socials_links">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/project-ronin-coder" target="_blank" class="socials_links">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/projectronin/" target="_blank" class="socials_links">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+  <!-- (>>) ABOUT -->
+
+  <!-- (<<) PROJECTS -->
+  <section id="ProjectsSection">
+    <div class="container">
+      <div class="project_heading">
+        <h1 class="project_heading_typewriter">Projects made so far...</h1>
+      </div>
+      <div class="project_body">
+        <div class="research_projects">
+          <h3 class="research_projects_heading">
+            <i class="fa-regular fa-file-lines"></i>
+            Research Projects
+          </h3>
+          <div class="project">
+            <div class="project_title">
+              <div>
+                <h5>Student Information System</h5>
+                <a href="https://youtu.be/TOH4mjYNX8A" target="_blank"><i class="fa-solid fa-link"></i>Link to Demo</a>
+              </div>
+              <ul class="tech_used">
+                <li class="tech_item">C#</li>
+                <li class="tech_item">SQL</li>
+                <li class="tech_item">Crystal Report</li>
+                <li class="tech_item">Windows Application</li>
+              </ul>
+            </div>
+            <div class="project_images">
+              <div class="image">
+                <img src="./assets/img/project1_login_page.jpg" alt="" class="project_image">
+              </div>
+              <div class="image">
+                <img src="./assets/img/project1_signup_page.jpg" alt="" class="project_image">
+              </div>
+              <div class="image">
+                <img src="./assets/img/project1_dashboard_page.jpg" alt="" class="project_image">
+              </div>
+              <div class="image">
+                <img src="./assets/img/project1_students_page.jpg.png" alt="" class="project_image">
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project_title">
+              <div>
+                <h5>PalengkeGO</h5>
+                <a href="#ContactSection">
+                  <i class="fa-solid fa-phone"></i>
+                  Contact for
+                  more info
+                </a>
+              </div>
+              <ul class="tech_used">
+                <li class="tech_item">HTML</li>
+                <li class="tech_item">CSS</li>
+                <li class="tech_item">JS</li>
+                <li class="tech_item">PHP</li>
+                <li class="tech_item">MySQL</li>
+              </ul>
+            </div>
+            <div class="project_images">
+              <div class="image">
+                <img src="./assets/img/project2_user_page.png" alt="" class="project_image">
+              </div>
+              <div class="image">
+                <img src="./assets/img/project2_user_home_page.png" alt="" class="project_image">
+              </div>
+              <div class="image">
+                <img src="./assets/img/project2_admin_page.png" alt="" class="project_image">
+              </div>
+              <div class="image">
+                <img src="./assets/img/project2_stallholder_page.png" alt="" class="project_image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="personal_projects">
+          <h3 class="personal_projects_heading">
+            <i class="fa-regular fa-file-code"></i>
+            Personal Projects
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- (>>) PROJECTS -->
+
+  <!-- (<<) CONTACT -->
+  <section id="ContactSection">
+    <div class="container">
+      <div class="contact_header">
+        <h1>Reach Out.</h1>
+      </div>
+      <div class="contact_body">
+        <div class="contact_body_connect">
+          <h2>Wanna connect with me?</h2>
+          <div>
+            <a href="mailto:ronvincent.sanjuan.rvsj@gmail.com" class="button"><i class="fa-solid fa-link"></i>Hit me
+              up!</a>
+          </div>
+        </div>
+        <div class="contact_body_menu">
+          <ul class="contact_body_menu_list">
+            <li class="contact_body_menu_item">
+              <a href="#HeroSection">Intro</a>
+            </li>
+            <li class="contact_body_menu_item">
+              <a href="#AboutSection">About</a>
+            </li>
+            <li class="contact_body_menu_item">
+              <a href="#ProjectsSection">Projects</a>
+            </li>
+            <li class="contact_body_menu_item">
+              <a href="#ContactSection">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact_body_contacts">
+          <h5>Contact Me</h5>
+          <div>
+            <a href="mailto:ronvincent.sanjuan.rvsj@gmail.com">sayhello@projectronin.com</a>
+            <a href="tel: +639682267445">+63 968 226 7445</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact_copyright">
+        <ul class="contact_copyright_list">
+          <li class="contact_copyright_list_item">
+            <a href="https://www.facebook.com/rvincent.sanjuan" target="_blank"
+              class="contact_copyright_list_item_links">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ronxvincent" target="_blank" class="contact_copyright_list_item_links">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ronin.sj/" target="_blank" class="contact_copyright_list_item_links">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/project-ronin-coder" target="_blank" class="contact_copyright_list_item_links">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/projectronin/" target="_blank"
+              class="contact_copyright_list_item_links">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- <img src="assets/brand/project_ronin_logo_pr-single-blue.png" alt="" srcset=""> -->
+
+      </div>
+    </div>
+    <div class="back_to_top">
+      <a href="#HeroSection" class="button">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </div>
+  </section>
+  <!-- (>>) CONTACT -->
+
+  <!-- (<<) FOOTER -->
+  <footer id="FooterSection">
+    <div class="container">
+      <div class="footer_img_container">
+        <img class="footer_icon_img" src="./assets/brand/project_ronin_logo_pr-single-blue.png" alt="">
+      </div>
+      <div class="footer_copyright">
+        <p class="copyright">Copyright &copy; 2023 Project Ronin. All rights reserved</p>
+        <p class="font_credits">Font: HYWenHei-85W by<a href="https://genshin.hoyoverse.com/en/" target="_blank">
+            Genshin
+            Impact</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- (>>) FOOTER -->
+
+
+  <!-- SCRIPTS -->
+  <!-- MAIN SCRIPT -->
+  <script src="./js/main.js"></script>
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/a6960b1b58.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
