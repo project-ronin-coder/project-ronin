@@ -823,17 +823,41 @@ a {
 }
 
 
-.navbar_list_item:nth-child(1), .button_set .button:nth-child(1){
+.navbar_list_item:nth-child(1){
   transition-delay: 200ms;
 }
-.navbar_list_item:nth-child(2), .button_set .button:nth-child(2){
-  transition-delay: 400ms;
+.navbar_list_item:nth-child(2){
+  transition-delay: 300ms;
 }
 .navbar_list_item:nth-child(3){
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 .navbar_list_item:nth-child(4){
+  transition-delay: 500ms;
+}
+
+.hero_title_quote{
+  transition-delay: 600ms;
+
+}
+.hero_title_desc{
+  transition-delay: 700ms;
+}
+
+.button_set .button:nth-child(1){
   transition-delay: 800ms;
+}
+
+.button_set .button:nth-child(2){
+  transition-delay: 900ms;
+}
+
+.hero_image{
+  transition-delay: 1000ms;
+}
+
+.scroll_down{
+  transition-delay: 1100ms;
 }
 
 @media(prefers-reduced-motion){
